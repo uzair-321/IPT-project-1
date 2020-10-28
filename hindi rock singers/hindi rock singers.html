@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hindi Rock Singers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="shortcut icon" type="image/png" href="../favicon-32x32.png"/>
+<link rel="stylesheet" type="text/css" href="../Index.css"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+li {list-style:none;}
+.service-wrap{padding:40px 0; text-align:center;}
+.service-wrap h3 a{font-size:24px; text-decoration:none; color:#000;}
+.service-wrap h3 a:hover{color:#999}
+.service-details{background:#fff; padding:15px 15px 25px 15px;}
+.service-details h3{margin-top:10px;}
+.readmore a{position:relative; vertical-align: middle; z-index:1000; background:#000; color:#fff !important; text-shadow: 0 0 2px rgba(0, 0, 0, 0.36); text-decoration:none; font-size:14px; text-transform:uppercase; font-weight:bold; padding:10px 24px; display:inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.readmore a:hover{color:#000 !important;}
+.readmore a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#999;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+	
+}
+.readmore a:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.inner-content .service-details{background:#f3f3f3;}
+.inner-content .service-wrap{background:none; padding:0;} 
+.service-image{position:relative; overflow:hidden;}
+.serviceList li{margin:15px 0;}
+.service-image img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.serviceList li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hoverlink{background:rgba; position:absolute; top:0; left:0; width:100%; height:100%; display:none;}
+
+.a1{
+	font-size:28px;
+	font-family:Trebuchet MS;	
+	font-style:Bold;
+	text-transform:uppercase;
+	background: linear-gradient(to right, #FFF 0%, #FFF, #FFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.a3{
+	border:solid;
+	border-radius:40px;
+	float:right;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			
+}
+.a3:hover{
+	background: linear-gradient(to right,#999, #000 , #999 100%);
+}
+.sb{
+	border-radius:100%;
+	color:#FFF;
+	background: linear-gradient(to right, #999 0%, #999 100%);}
+.sb:hover{	background: linear-gradient(to right, #CCC 0%, #000 100%);
+color:#FFF;
+}	
+		
+.bu1{
+	background-color:#330867;
+	color:#FFF;
+	border:1px solid #30CFD0;
+	font-size:30px;
+}		
+.bu1:hover{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+}
+.a6{
+	background: linear-gradient(to right, #FFF 0%, #FFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#mainMenu li {
+	display:block;
+}
+
+#mainMenu a {
+	display:block;
+}
+
+
+#mainMenu li {
+	position:relative;
+	display:block;
+
+}
+#mainMenu a {
+	display:block;
+}
+
+#mainMenu li ul {
+	position:absolute;
+	left:100%;
+	top:1%;
+	display:none;
+	font-size:18px;
+}
+#mainMenu li:hover ul {
+	display:block;
+}
+.dropdown-menu{
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+border-radius:10%;
+}
+
+
+.head1{
+	font-size:50px;
+	font-family:ChocolateBox;
+	background: linear-gradient(to right, #66F, #000 ,#66F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.fs1 a{
+	color:#FFF;
+	text-decoration:none;
+}
+.cat1 a{
+	color:#CCC;
+	text-decoration:none;
+}
+
+</style>
+
+<body class="body1">
+
+<nav class="navbar navbar-inverse navbar">
+<div class="container-fluid navbar-header">
+<a class="navbar-brand a1" href="../Index.html">MusicWorld</a>
+
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ab">
+<span class="sr-only">Show and Hide the Navigation </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="ab">
+<ul class="nav navbar-nav a2">
+<li><a href="../Index.html">Home</a></li>
+<li class="dropdown" id="mainMenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Catogeries of Music <span class="caret"></span></a> 
+
+
+
+
+<ul class="dropdown-menu">
+<li class="dd1"><a href="#"> Rock Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../rock songs/rock songs.html"> English Rock Singers </a></li>
+<li><a href="hindi rock singers.html"> Hindi Rock Singers </a></li>
+</ul>
+</li>
+
+<li class="dd1"><a href="#"> Jazz Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../jazz songs/jazz songs.html"> English Jazz Singers </a></li>
+</ul>
+</li>
+
+<li class="dd1"><a href="#"> Pop Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../pop songs/pop songs.html"> English Pop Singers</a></li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Rap Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../rap song/rap song.html"> English Rap Singers</a></li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Classical Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../classical songs/classical songs.html"> English Classical Singers </a></li>
+</ul>
+</li>
+
+
+</ul>
+</li>
+<li><a href="#">About US</a></li>
+<li><a href="#">FAQs</a></li>
+
+
+
+
+
+
+
+
+<form class="nav navbar-nav">
+<div class="input-group ser2">
+<input class="s1" type="text" name="search" placeholder="  Search Songs.."/>
+
+
+<button class="btn sb">
+<span class="glyphicon glyphicon-search"></span>
+</button>
+
+</div>
+
+
+
+</form>
+</ul>
+
+</div>
+</nav>
+
+
+<!--service start-->
+<div class="service-wrap">
+  <div class="container">
+    <h1 class="head1">Some Famous Hindi  <span>Rock Singers</span></h1>
+    <ul class="row serviceList">
+      
+      <li class="col-md-4 col-sm-6">
+        <div class="service-image"><a href="#"><img src="220px-Vishal_Dadlani_Indian_Idol_Junior_launch_(cropped).jpg" height="150"/></a>
+ 
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Vishal Dadlani</a></h3>
+          <p>Vishal Dadlani is an Indian music composer, playback singer, music record producer, lyricist, and performer. He is one half of the film music producing duo Vishal–Shekhar, the other being Shekhar Ravjiani.
+<br/>Genres: Rock </p>
+          <div class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      <li class="col-md-4 col-sm-6">
+        <div class="service-image"><a href="#"><img src="download.jpg" height="140"></a>
+       
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Sonu Nigam</a></h3>
+          <p>Sonu Nigam is an Indian playback singer, composer, live performer, host and actor. He sings predominantly in Hindi and Kannada language films. He has also sung in English, Bengali, Manipuri, Gujarati, Tamil, Telugu, Marathi, Tulu, Assamese, Odia, Nepali, Maithili, Malayalam and various Indian languages.
+<br/>Genres: Rock </p>
+          <div class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li> <li class="col-md-4 col-sm-6">
+        <div class="service-image"><a href="#"><img src="220px-Kailash_Kher_61st_Filmfare_Awards_South_(cropped).jpg" height="200"/></a>
+         
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Kailash Kumar Kher</a></h3>
+          <p>Jennifer Lynn Lopez[3] (born July 24, 1969) is an American singer, actress, dancer and producer. In 1991, Lopez began appearing as a Fly Girl dancer on In Living Color,..
+<br/>Genres: Rock  </p>
+          <div class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li><li class="col-md-4 col-sm-6">
+        <div class="service-image"><a href="#"><img src="Zubeen_Garg_in_Edufest_2016.jpg"/></a>
+          
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Zubeen Garg</a></h3>
+          <p>Zubeen Garg is an Indian playback singer, composer, songwriter, music producer, film director, philanthropist, film producer and actor from Jorhat, Assam. His contributions are mostly attributed in Assamese, Bengali and Bollywood. 
+<br/>Genres: Rock </p>
+          <div class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li><li class="col-md-4 col-sm-6">
+        <div class="service-image"><a href="#"><img src="220px-Adnan_Sami_in_2016.jpg" height="200"></a>
+   
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Adnan Sami</a></h3>
+          <p>Adnan Sami Khan is a singer, musician, music composer, pianist and actor. He performs Indian and western music, specially for Hindi movies. His most notable instrument is the piano. He is credited for being the first person to play Indian classical music on the piano in a style he created through the Santoor.
+<br/>Genres: Rock </p>
+          <div class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li><li class="col-md-4 col-sm-6">
+        <div class="service-image"><a href="#"><img src="220px-Himesh_Reshammiya_with_team_of_'Humshakals'_at_Hasee_House_on_Star_Plus.jpg" height="200"/></a>
+        
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Himesh Reshammiya</a></h3>
+          <p>Himesh Reshammiya is an Indian music director, songwriter, composer, producer, singer, story writer and film distributor who predominantly works in Bollywood film industry.
+<br/>Genres: Rock</p>
+          <div class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<!--service end--> 
+
+
+<footer>
+<div class="footer-main-div">
+<div class="footer-social-icons">
+<ul>
+
+<li class="img1"><img class="icons" src="facebook-square-brands.svg" height="30px" width="20px" usemap="#abc"/></li>
+<li><img src="instagram-brands.svg" height="30px" width="20px" usemap="#abg"/></li>
+<li><img src="twitter-square-brands.svg" height="30px" width="20px" usemap="#abo"/></li>
+<li><img src="youtube-square-brands.svg" height="30px" width="20px" usemap="#abi"/></li>
+
+<map name="abc">
+<area shape="circle" coords="30px,50px,60px"href="https://www.facebook.com" />
+</map>
+<map name="abg">
+<area shape="circle" coords="30px,50px,60px"href="https://www.instagram.com" />
+</map>
+<map name="abo">
+<area shape="circle" coords="30px,50px,60px"href="https://www.twitter.com" />
+</map>
+<map name="abi">
+<area shape="circle" coords="30px,50px,60px"href="https://www.youtube.com" />
+</map>
+
+</ul>
+</div>
+<br/>
+
+<div class="row fot1">
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Albums</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">English </a>&nbsp;<span class="bor1"></span>
+<a href="#">Hindi </a>&nbsp;<span class="bor1"></span>
+<a href="#">Telugu </a>&nbsp;<span class="bor1"></span>
+<a href="#">Tamil </a>&nbsp;<span class="bor1"></span>
+<a href="#">Bengali </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Artists</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Arijit Singh </a>&nbsp;<span class="bor1"></span>
+<a href="#">Neha Kakkar </a>&nbsp;<span class="bor1"></span>
+<a href="#">Armaan Malik </a>&nbsp;<span class="bor1"></span>
+<a href="#">ED Sheeran </a>&nbsp;<span class="bor1"></span>
+<a href="#">Atif Aslam </a>&nbsp;<span class="bor1"></span>
+<a href="#">Justin Beiber </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rahat Fateh Ali Khan </a>&nbsp;<span class="bor1"></span>
+<a href="#">Honey Singh </a>&nbsp;<span class="bor1"></span>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Genres</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Bollywood Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rock Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Jazz Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Pop Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rap Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Classical Songs </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+</div>
+
+<br/>
+<div class="text-center">
+<div class="sdu"><a class="cs" href="#">About Us </a>&nbsp;&nbsp;<a class="cs" href="#">Terms & Conditions </a>
+&nbsp;<a class="cs" href="#">Privacy Policy </a> 
+&nbsp; <a class="cs" href="#">Contact </a></div>
+<div class="tyu"> 
+<span class="rt"> © 2019 Music World. All rights reserved. </span><br/>
+<a class="cs" href="#">eCommerce</a> <span class="rt">by</span> <a class="cs" href="#">Aptech NN</a> </div>
+</div>
+
+  
+</div>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,524 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.a2{
+	font-size:20px;
+	font-family:Agency FB;	}
+
+.dd1{
+	font-size:18px;
+}
+
+
+
+.dropdown {
+  display: inline-block;
+
+}
+.body1{
+	background-color:#CCC; 
+	box-shadow:0px 0px 20px 2px inset #333;
+}
+.body2{
+	background-color:#f2f2f2; 
+	box-shadow:0px 0px 42px 2px inset #aaaaaa;
+}
+.dropdown-menu a {
+  display: block;
+  font-family:Festival;	
+	border-radius:10%;
+}
+.dropdown:hover .dropdown-menu {
+	display: block;
+}
+.dropdown-menu li a:hover{
+	background: linear-gradient(to right, #CCC, #CCC ,#CCC);
+	box-shadow: 0px 0px 1px 3px #ffffff;
+}	
+.ser1{
+	position:relative;
+	top:10px;
+	left:18%;
+	
+}
+.ser2{
+	position:relative;
+	top:10px;
+	left:35%;
+	
+}
+.a5{
+
+  padding: 6px 10px;
+  margin-top: 3px;
+  margin-right: 16px;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  
+ 
+  
+}
+.s1{
+	background-color:#f2f2f2;
+    border:2px solid #000;
+	border-top-right-radius:20px;
+	border-bottom-right-radius:20px;
+	height:30px;
+	width:300px;
+	
+  }
+.va1{
+	float:right;
+	font-size:17px;
+	font-family:Arial, Helvetica, sans-serif;
+	background: linear-gradient(to right, #000 , #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+  
+  
+  
+
+.login1{
+	width:250px;
+	height:35px;
+	 border: 1px solid #ccc;
+	border-radius:10px;
+	font-family:Calibri;
+}
+
+.head{
+		text-align:center;
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-family:Berlin Sans FB;
+	
+}
+label{
+	font-family:Calibri;
+	
+}
+.m1{
+	background-color:#f2f2f2;
+}
+.foot{
+	
+	text-align:center;
+}
+.birth1{
+	font-size:24px;
+}
+.pic1{
+	 border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width:180px;
+  height:130px;
+}
+.slid1{
+	background-color:#f2f2f2;
+}
+
+.l1{
+	border-left: 2px solid #CCC;
+}
+.son5{
+	position:fixed;
+	left:78%;
+}
+.son5:hover .overlay {
+  opacity: 1;
+}
+
+
+.footer-main-div{
+	background:#000;
+	}
+.fab fa-facebook-square{
+
+}
+.footer-social-icons ul{
+	position:relative;
+	top:12px;
+	left:-3%;
+	text-align:center;
+}
+.footer-social-icons ul li{
+	display:inline-block;
+	width:30px;
+	height:30px;
+	margin:0px 10px;
+	border-radius:50%;
+	background:#FFF;
+	}
+.sdu{
+	width:98%;
+	font-family:agency FB;
+	font-size:17px;
+		background:#000;
+text-decoration:none;
+position:relative;
+top:10px;
+}
+
+
+.tyu{
+	width:100%;
+	font-family:calibri;
+	font-size:15px;
+		background:#000;
+position:relative;
+top:19px;
+	}
+	
+.cs{
+	text-decoration: none;
+color:#FFF;}
+.rt{color:#FFF;
+	background:#000;
+}
+.cs:hover{
+	background: linear-gradient(to right, #FFF 0%, #999, #FFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.sn1{
+	background: linear-gradient(to right,#330867, #600 , #330867 );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:12%;
+	top:100%;
+}
+.sn111{
+	background: linear-gradient(to right,#330867, #600 , #330867 );
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:14%;
+	top:100%;
+}
+.sn2{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:29%;
+	top:100%;
+}
+.sn222{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:27%;
+	top:100%;
+}
+.sn3{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:47%;
+	top:100%;
+}
+.sn4{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:64%;
+	top:100%;
+}
+.sn5{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:81%;
+	top:100%;
+}
+.sn55{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:78%;
+	top:100%;
+}
+.sn33{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:44%;
+	top:100%;
+}
+.sn44{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:61%;
+	top:100%;
+}
+.sn11{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:10%;
+	top:100%;
+}
+.sn22{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:31%;
+	top:100%;
+}
+.sn333{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:46%;
+	top:100%;
+}
+.sn444{
+	background: linear-gradient(to right,#330867, #600, #330867);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	position:fixed;
+	left:60%;
+	top:100%;
+}
+
+.cat1 a:hover{
+	color:#FFF;
+}
+.bor1{
+	border-left: 2px solid #666;
+}
+.fot1{
+	text-align:center;
+	font-family:agency FB;
+	font-size:16px;
+	width:100%;
+}
+.cat2 a:hover{
+	color:#39F;
+	
+}
+.modf1{
+	background-color:#f2f2f2;
+}
+.img1{
+	 border: 1px solid #ddd;
+  border-radius: 10px;
+}
+.head12{
+	background-color:#f2f2f2;
+}
+
+
+
+
+
+.body3{
+	background-color:#f2f2f2; 
+	
+}
+.picsf{
+	width:90%;
+	border-radius:10%;
+	position:absolute;
+	top:20px;
+	left:10%;
+}
+.picbor1{
+	border-radius:10%;
+	
+	
+}
+.bodc1{
+		background-color:#f2f2f2; 
+	box-shadow:0px 0px 12px 2px  #aaaaaa;
+	height:640px;
+	
+}
+.bodc2{
+		background-color:#f2f2f2; 
+	box-shadow:0px 0px 12px 2px  #aaaaaa;
+	height:850px;
+	
+}
+.name1{
+	background: linear-gradient(to right, #66F, #000 ,#66F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	 text-shadow: 5px 4px 3px #CCCCCC;
+	font-size:60px;
+	font-family:Festival;
+	position:absolute;
+	top:-10px;
+	left:40%;
+}
+.name2{
+	background: linear-gradient(to right, #66F, #000 ,#66F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	 text-shadow: 5px 4px 3px #CCCCCC;
+	font-size:60px;
+	font-family:Festival;
+	position:absolute;
+	top:-10px;
+	left:45%;
+}
+
+
+.title1{
+	width:90%;
+	position:relative;
+	top:250px;
+	left:5%;
+}
+.title1 p{
+	font-size:30px;
+	font-family:Festival;
+}
+.title{
+	width:18%;
+	position:absolute;
+	top:-15px;
+	left:40%;
+}
+.hech1{
+	
+	position:absolute;
+	top:-10px;
+	left:5%;
+}
+.Art1{
+	position:absolute;
+	top:-15px;
+	left:80%;
+}
+.songno1{
+	width:90%;
+	position:relative;
+	top:300px;
+	left:5%;
+}
+.songno1 p{
+	font-size:20px;
+	font-family:agency FB;
+}
+.song1{
+	width:5%;
+	font-size:18px;
+	font-weight:800;
+	position:absolute;
+	top:-13px;
+	left:5%;
+}
+.picbor2{
+	width:60px;
+	height:55px;
+	border-radius:10%;
+	position:absolute;
+	top:-25px;
+	left:15%;
+	
+}
+.songname1{
+	width:40%;
+	font-size:16px;
+	font-weight:800;
+	position:absolute;
+	top:-13px;
+	left:37%;
+}
+.artname1{
+	font-weight:800;
+	position:absolute;
+	top:-13px;
+	left:79%;
+}
+
+.songno2{
+	width:90%;
+	position:relative;
+	top:355px;
+	left:5%;
+}
+.songno2 p{
+	font-size:20px;
+	font-family:agency FB;
+}
+
+.songno3{
+	width:90%;
+	position:relative;
+	top:410px;
+	left:5%;
+}
+.songno3 p{
+	font-size:20px;
+	font-family:agency FB;
+}
+
+.songno4{
+	width:90%;
+	position:relative;
+	top:465px;
+	left:5%;
+}
+.songno4 p{
+	font-size:20px;
+	font-family:agency FB;
+}
+
+.songno5{
+	width:90%;
+	position:relative;
+	top:520px;
+	left:5%;
+}
+.songno5 p{
+	font-size:20px;
+	font-family:agency FB;
+}

@@ -1,0 +1,685 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>English Rock Singers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<link rel="shortcut icon" type="image/png" href="../favicon-32x32.png"/>
+<link rel="stylesheet" type="text/css" href="../Index.css"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+li {list-style:none;}
+.service-wrap{padding:40px 0; text-align:center;}
+.service-wrap h3 a{font-size:24px; text-decoration:none; color:#000;}
+.service-wrap h3 a:hover{color:#999}
+.service-details{background:#fff; padding:15px 15px 25px 15px;}
+.service-details h3{margin-top:10px;}
+.readmore a{position:relative; vertical-align: middle; z-index:1000; background:#000; color:#fff !important; text-shadow: 0 0 2px rgba(0, 0, 0, 0.36); text-decoration:none; font-size:14px; text-transform:uppercase; font-weight:bold; padding:10px 24px; display:inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.readmore a:hover{color:#000 !important;}
+.readmore a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#999;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+	
+}
+.readmore a:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.inner-content .service-details{background:#f3f3f3;}
+.inner-content .service-wrap{background:none; padding:0;} 
+.service-image{position:relative; overflow:hidden;}
+.serviceList li{margin:15px 0;}
+.service-image img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.serviceList li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hoverlink{background:rgba; position:absolute; top:0; left:0; width:100%; height:100%; display:none;}
+
+.a1{
+	font-size:28px;
+	font-family:Trebuchet MS;	
+	font-style:Bold;
+	text-transform:uppercase;
+	background: linear-gradient(to right, #FFF 0%, #FFF, #FFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.a3{
+	border:solid;
+	border-radius:40px;
+	float:right;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			
+}
+.a3:hover{
+	background: linear-gradient(to right,#999, #000 , #999 100%);
+}
+.sb{
+	border-radius:100%;
+	color:#FFF;
+	background: linear-gradient(to right, #999 0%, #999 100%);}
+.sb:hover{	background: linear-gradient(to right, #CCC 0%, #000 100%);
+color:#FFF;
+}	
+		
+.bu1{
+	background-color:#330867;
+	color:#FFF;
+	border:1px solid #30CFD0;
+	font-size:30px;
+}		
+.bu1:hover{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+}
+.a6{
+	background: linear-gradient(to right, #FFF 0%, #FFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#mainMenu li {
+	display:block;
+}
+
+#mainMenu a {
+	display:block;
+}
+
+
+#mainMenu li {
+	position:relative;
+	display:block;
+
+}
+#mainMenu a {
+	display:block;
+}
+
+#mainMenu li ul {
+	position:absolute;
+	left:100%;
+	top:1%;
+	display:none;
+	font-size:18px;
+}
+#mainMenu li:hover ul {
+	display:block;
+}
+.dropdown-menu{
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+border-radius:10%;
+}
+.head1{
+	font-size:50px;
+	font-family:ChocolateBox;
+	background: linear-gradient(to right, #66F, #000 ,#66F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	 text-shadow: 5px 4px 3px #CCCCCC;
+}
+
+.fs1 a{
+	color:#FFF;
+	text-decoration:none;
+}
+.cat1 a{
+	color:#CCC;
+	text-decoration:none;
+}
+.cat2 a{
+	color:#000;
+	text-decoration:none;
+}
+.abcd1{
+	font-family:Lucida Bright;font-size:18px;}
+.abcd{font-size:11px;font-family:Verdana, Geneva, sans-serif;}
+
+</style>
+
+<body class="body1">
+
+<nav class="navbar navbar-inverse navbar">
+<div class="container-fluid navbar-header">
+<a class="navbar-brand a1" href="../Index.html">MusicWorld</a>
+
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ab">
+<span class="sr-only">Show and Hide the Navigation </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="ab">
+<ul class="nav navbar-nav a2">
+<li><a href="../Index.html">Home</a></li>
+<li class="dropdown" id="mainMenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Catogeries of Music <span class="caret"></span></a> 
+
+
+<ul class="dropdown-menu">
+
+<li class="dd1"><a href="#"> Rock Songs </a>
+<ul class="dropdown-menu">
+<li><a href="rock songs.html"> English Rock Singers </a></li>
+<li><a href="../hindi rock singers/hindi rock singers.html"> Hindi Rock Singers </a></li>
+</ul>
+</li>
+
+<li class="dd1"><a href="#"> Jazz Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../jazz songs/jazz songs.html"> English Jazz Singers </a></li>
+</ul>
+</li>
+
+<li class="dd1"><a href="#"> Pop Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../pop songs/pop songs.html"> English Pop Singers</a></li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Rap Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../rap song/rap song.html"> English Rap Singers</a></li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Classical Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../classical songs/classical songs.html"> English Classical Singers </a></li>
+</ul>
+</li>
+
+
+</ul>
+</li>
+<li><a href="#">About US</a></li>
+<li><a href="#">FAQs</a></li>
+
+
+
+
+
+
+
+
+<form class="nav navbar-nav">
+<div class="input-group ser2">
+<input class="s1" type="text" name="search" placeholder="  Search Songs.."/>
+
+
+<button class="btn sb">
+<span class="glyphicon glyphicon-search"></span>
+</button>
+
+</div>
+
+
+
+</form>
+
+</ul>
+
+
+
+</div>
+</nav>
+
+
+<!--service start-->
+<div class="service-wrap">
+  <div class="container">
+    <h1 class="head1">Some Famous English  <span>Rock Singers</span></h1>
+    <ul class="row serviceList">
+      
+<li class="col-md-4 col-sm-6">
+<div class="service-image" data-toggle="modal" data-target="#A1"><a href="#"><img src="ts.jpg"></a>
+ 
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Taylor Swift</a></h3>
+          <p>Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. As one of the world's leading contemporary recording artists, she is known for narrative songs.. </p>
+          <div data-toggle="modal" data-target="#A1" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+<div class="modal fade" id="A1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="TSwift.jpg" height="200" width="200"/>
+<h1 class="head1">Taylor Swift</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+
+<p class="abcd">Taylor Alison Swift (born December 13, 1989) is an American singer-songwriter. As one of the world's leading contemporary recording artists, she is known for narrative songs about her personal life, which has received widespread media coverage.
+
+Born and raised in Pennsylvania, Swift moved to Nashville, Tennessee, at the age of 14 to pursue a career in country music. She signed with the label Big Machine Records and became the youngest artist ever signed by the Sony/ATV Music publishing house. Her 2006 self-titled debut album peaked at number five on the Billboard 200 and spent the most weeks on the chart in the 2000s. The album's third single, "Our Song", made her the youngest person to single-handedly write and perform a number-one song on the Hot Country Songs chart. Swift's second album, Fearless, was released in 2008. Buoyed by the success of pop crossover singles "Love Story" and "You Belong with Me", Fearless became the best-selling album of 2009 in the US. The album won four Grammy Awards, with Swift becoming the youngest Album of the Year winner.
+
+Swift was the sole writer of her 2010 album, Speak Now. It debuted at number one in the United States and the single "Mean" won two Grammy Awards. Her fourth album, Red (2012), yielded the successful singles "We Are Never Ever Getting Back Together" and "I Knew You Were Trouble". For her fifth album, the pop-focused 1989 (2014), she received three Grammys, and became the first woman and fifth act overall to win Album of the Year twice. Its singles "Shake It Off", "Blank Space", and "Bad Blood" reached number one in the US, Australia, and Canada. Swift's sixth album, Reputation (2017) and its lead single "Look What You Made Me Do" topped the UK and US charts; with the former, she became the first act to have four albums sell one million copies within one week in the US...<a href="https://en.wikipedia.org/wiki/Taylor_Swift">see more</a></p>
+</div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Taylor Swift/Index.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Taylor Swift/Taylor Swift Events/ts events.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+
+
+<li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A2"><a href="#"><img src="kp.jpg"></a>
+       
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Katy Perry</a></h3>
+          <p>Katheryn Elizabeth Hudson (born October 25, 1984), known professionally as Katy Perry, is an American singer, songwriter, and television judge... </p>
+          <div data-toggle="modal" data-target="#A2" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li> 
+   
+<div class="modal fade" id="A2">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="download (4).jpg" height="200" width="200"/>
+<h1 class="head1">Katy Perry</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+
+<p class="abcd">Katheryn Elizabeth Hudson (born October 25, 1984), known professionally as Katy Perry, is an American singer, songwriter, and television judge. After singing in church during her childhood, she pursued a career in gospel music as a teenager. Perry signed with Red Hill Records and released her debut studio album Katy Hudson under her birth name in 2001, which was commercially unsuccessful. She moved to Los Angeles the following year to venture into secular music after Red Hill ceased operations and she subsequently began working with producers Glen Ballard, Dr. Luke, and Max Martin. After adopting the stage name Katy Perry and being dropped by The Island Def Jam Music Group and Columbia Records, she signed a recording contract with Capitol Records in April 2007.
+
+Perry rose to fame in 2008 with the release of her second album, a pop rock record titled One of the Boys, and its singles "I Kissed a Girl" and "Hot n Cold". The former track also sparked controversy for its sapphic themes. Her third album, Teenage Dream (2010), ventured into disco, and was her first album to top the U.S. Billboard 200. It topped the U.S. Billboard Hot 100 with the singles "California Gurls", "Teenage Dream", "Firework", "E.T.", and "Last Friday Night (T.G.I.F.)", while "The One That Got Away" reached number three on the chart. The album became the first by a female artist to produce five number-one songs in the U.S., and the second overall after Michael Jackson's album Bad. In March 2012, she re-issued the album as Teenage Dream: The Complete Confection, which produced the songs "Part of Me" and "Wide Awake". Her fourth album, Prism (2013), was her second to peak atop the U.S. charts. It is influenced by pop and dance, and she became the first artist with multiple videos to reach one billion views on Vevo with the videos for its songs "Roar" and "Dark Horse". Her fifth album, Witness (2017), delved into electropop and became her third album to reach number one in the U.S. "Chained to the Rhythm" was the most successful single from that album, breaking Spotify's record for most first-day streams for a song by a female artist...<a href="https://en.wikipedia.org/wiki/Katy_Perry">see more</a></p>
+</div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Katy perry/index.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Katy perry/kp events/Untitled-3.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+   
+      
+<li class="col-md-4 col-sm-6">
+        <div class="service-image"data-toggle="modal" data-target="#A3"><a href="#"><img src="jl.jpg"/></a>
+         
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Jennifer Lopez</a></h3>
+          <p>Jennifer Lynn Lopez[3] (born July 24, 1969) is an American singer, actress, dancer and producer. In 1991, Lopez began appearing as a Fly Girl dancer on In Living Color,..  </p>
+          <div data-toggle="modal" data-target="#A3" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+   
+<div class="modal fade" id="A3">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="download.jpg" height="200" width="200"/>
+
+<h1 class="head1">Jennifer Lopez</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+
+<p class="abcd">Jennifer Lynn López[2] (born July 24, 1969) is an American singer, actress, dancer and producer. In 1991, López began appearing as a Fly Girl dancer on In Living Color, where she remained a regular until she decided to pursue an acting career in 1993. For her first leading role in the 1997 Selena biopic of the same name, López received a Golden Globe nomination and became the first Latin actress to earn over US$1 million for a film. She went on to star in Anaconda (1997) and Out of Sight (1998), later establishing herself as the highest-paid Latin actress in Hollywood.[3]
+
+López ventured into the music industry with her debut studio album On the 6 (1999), which helped propel the Latin pop movement in American music.[4] With the simultaneous release of her second studio album J.Lo and her romantic comedy The Wedding Planner in 2001, López became the first woman to have a number one album and film in the same week. Her 2002 remix album, J to tha L–O! The Remixes, became the first in history to debut at number one on the U.S. Billboard 200. Later that year, she released her third studio album This Is Me... Then, and appeared in Maid in Manhattan.
+
+After starring in Gigli (2003), a critical and commercial failure, López subsequently starred in the successful romantic comedies Shall We Dance? (2004) and Monster-in-Law (2005). Her fifth studio album, Como Ama una Mujer (2007), received the highest first-week sales for a debut Spanish album in the United States. Following an unsuccessful period, she returned to prominence in 2011 with her appearance as a judge on American Idol, and released her seventh studio album Love?. In 2016, she began starring in the crime drama series Shades of Blue and commenced a residency show, Jennifer Lopez: All I Have, at Planet Hollywood Las Vegas. Since 2017, Lopez has produced and served as a judge on World of Dance...<a href="https://en.wikipedia.org/wiki/Jennifer_Lopez">see more</a></p>
+</div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Jennifer lopez/index.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Jennifer lopez/jp events/Untitled-4.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div> 
+   
+<li class="col-md-4 col-sm-6">
+        <div class="service-image"data-toggle="modal" data-target="#A4"><a href="#"><img src="Ed Sheeran.jpg"/></a>
+          
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Ed Sheeran</a></h3>
+          <p>Ed Sheeran was born in February 1991 in Halifax, England. He began playing guitar at a young age and soon after started writing his own songs. When he.. </p>
+          <div data-toggle="modal" data-target="#A4" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+
+<div class="modal fade" id="A4">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="download (1).jpg" height="200" width="200"/>
+<h1 class="head1">Ed Sheeran</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+
+<p>Edward Christopher Sheeran, MBE (/ˈʃɪərən/; born 17 February 1991) is an English singer, songwriter, guitarist, record producer, and actor. He attended the Academy of Contemporary Music in Guildford as an undergraduate from the age of 18 in 2009. In early 2011, Sheeran independently released the extended play, No. 5 Collaborations Project. After signing with Asylum Records, his debut album, + (pronounced "plus"), was released in September 2011. It topped the UK and Australian charts, reached number five in the US, and has since been certified seven-times platinum in the UK. The album contains the single "The A Team", which earned him the Ivor Novello Award for Best Song Musically and Lyrically. In 2012, Sheeran won the Brit Awards for Best British Male Solo Artist and British Breakthrough Act. "The A Team" was nominated for Song of the Year at the 2013 Grammy Awards, where he performed the song with Elton John.
+
+His second studio album, x (pronounced "multiply"), was released in June 2014. It peaked at number one in the UK and the US. In 2015, x won the Brit Award for Album of the Year, and he received the Ivor Novello Award for Songwriter of the Year from the British Academy of Songwriters, Composers and Authors. His single from x, "Thinking Out Loud", earned him two Grammy Awards at the 2016 ceremony: Song of the Year and Best Pop Solo Performance. In May 2016, x was named the second-best-selling album worldwide of 2015.
+
+Sheeran's third album, ÷ (pronounced "divide"), was released in March 2017. The album debuted at number one in the UK, the US and other major markets. The first two singles from the album, "Shape of You" and "Castle on the Hill", were released in January 2017 and broke records in a number of countries, including the UK, Australia and Germany, by debuting in the top two positions of the charts. He also became the first artist to have two songs debut in the US top 10 in the same week. By March 2017, Sheeran had accumulated ten top 10 singles from ÷ on the UK Singles Chart, breaking the record for most top 10 UK singles from one album. His fourth single from ÷, "Perfect", reached number one in the US, Australia and the UK, where it became the Christmas number one in 2017. In April 2018, ÷ was named the best-selling album worldwide of 2017...<a href="https://en.wikipedia.org/wiki/Ed_Sheeran">see more</a></p>
+</div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Ed Sheeran/index.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Ed Sheeran/ed events/Untitled-6.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>
+ 
+<li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A5"><a href="#"><img src="Ellie Goulding.jpg"></a>
+   
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Ellie Goulding</a></h3>
+          <p>Ellie Goulding. Elena Jane Goulding (/ˈɡoʊldɪŋ/ GOHL-ding; born 30 December 1986) is an English singer and songwriter. Her career began when she met record producers...  </p>
+          <div data-toggle="modal" data-target="#A5" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A5">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="download (2).jpg" height="200" width="200"/>
+
+<h1 class="head1">Ellie Goulding</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+
+<p class="abcd">Elena Jane Goulding (/ˈɡoʊldɪŋ/ GOHL-ding; born 30 December 1986) is an English singer and songwriter. Her career began when she met record producers Starsmith and Frankmusik, and she was later spotted by Jamie Lillywhite, who later became her manager and A&R. After signing to Polydor Records in July 2009, Goulding released her debut extended play, An Introduction to Ellie Goulding later that year.[1]
+
+In 2010, she became the second artist to top the BBC's annual Sound of... poll and win the Critics' Choice Award at the Brit Awards in the same year. She released her debut studio album, Lights, in 2010; it debuted at  No. 1 on the UK Albums Chart and has sold over 850,000 copies in the United Kingdom. In November 2010, the album was reissued as Bright Lights, which spawned two singles: a cover of Elton John's "Your Song" which was selected for the first John Lewis Christmas advert, reached  No. 2 on the UK Singles Chart, and "Lights", which became Goulding's highest-charting single on the US Billboard Hot 100 to date, peaking at  No. 2.
+
+Goulding's second studio album, Halcyon, was released in October 2012. "Anything Could Happen" preceded the album as the lead single. The album debuted at  No. 2 on the UK Albums Chart, and after 65 weeks, it reached  No. 1. Halcyon debuted at  No. 9 on the US Billboard 200. Halcyon Days, a repackaged edition of Halcyon, was released in August 2013, generating singles, such as "Burn", which became her first  No. 1 single in the UK. At the 2014 Brit Awards, she received the award for British Female Solo Artist. Goulding released her third studio album, titled Delirium, on 6 November 2015, with "On My Mind" as the album's lead...<a href="https://en.wikipedia.org/wiki/Ellie_Goulding">see more</a> </p>
+</div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Ellie Goulding/index.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Ellie Goulding/eg events/Untitled-5.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>     
+      
+      
+ <li class="col-md-4 col-sm-6">
+        <div class="service-image"data-toggle="modal" data-target="#A6"><a href="#"><img src="Madonna.jpg"/></a>
+        
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Madonna</a></h3>
+          <p>Madonna Louise Ciccone (/tʃɪˈkoʊni/; born August 16, 1958) is an American singer-songwriter, actress and businesswoman. Referred to as the "Queen of Pop" since the 1980s,... </p>
+          <div data-toggle="modal" data-target="#A6" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A6">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="images.jpg" height="200" width="200"/>
+<h1 class="head1">Madonna</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+
+<p>Madonna Louise Ciccone (/tʃɪˈkoʊni/; born August 16, 1958) is an American singer, songwriter, actress and businesswoman. Referred to as the "Queen of Pop" since the 1980s, Madonna is known for pushing the boundaries of songwriting in mainstream popular music and for the imagery she uses onstage and in music videos. She has frequently reinvented her music and image while maintaining autonomy within the recording industry. Although having sparked controversy, her works have been praised by music critics. Madonna is often cited as an influence by other artists.
+
+Born and raised in Michigan, Madonna moved to New York City in 1978 to pursue a career in modern dance. After performing as a drummer, guitarist, and vocalist in the rock bands Breakfast Club and Emmy, Madonna signed with Sire Records in 1982 and released her eponymous debut album the next year. She followed it with a series of successful albums, including global bestsellers Like a Virgin (1984) and True Blue (1986) and Grammy Award winners Ray of Light (1998) and Confessions on a Dance Floor (2005). Many of her songs have reached the top of record charts worldwide, including "Like a Virgin", "La Isla Bonita", "Like a Prayer", "Vogue", "Take a Bow", "Frozen", "Music", "Hung Up", and "4 Minutes".
+
+Madonna's popularity was further enhanced by her roles in films such as Desperately Seeking Susan (1985), Dick Tracy (1990), A League of Their Own (1992), and Evita (1996). While Evita earned her a Golden Globe Award for Best Actress, many of her other films received poor reviews. As a businesswoman, Madonna founded an entertainment company called Maverick (including the label Maverick Records) in 1992. Her other ventures include fashion design, children's books, health clubs, and filmmaking. She contributes to various charities, having founded Ray of Light Foundation in 1998 and Raising Malawi in 2006...<a href="https://en.wikipedia.org/wiki/Madonna_(entertainer)">see more</a></p>
+</div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Madonna/index.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Madonna/m events/Untitled-2.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>           
+      
+      
+      
+    </ul>
+  </div>
+</div>
+<!--service end--> 
+
+
+<footer>
+<div class="footer-main-div">
+<div class="footer-social-icons">
+<ul>
+
+<li class="img1"><img class="icons" src="facebook-square-brands.svg" height="30px" width="20px" usemap="#abc"/></li>
+<li><img src="instagram-brands.svg" height="30px" width="20px" usemap="#abg"/></li>
+<li><img src="twitter-square-brands.svg" height="30px" width="20px" usemap="#abo"/></li>
+<li><img src="youtube-square-brands.svg" height="30px" width="20px" usemap="#abi"/></li>
+
+<map name="abc">
+<area shape="circle" coords="30px,50px,60px"href="https://www.facebook.com" />
+</map>
+<map name="abg">
+<area shape="circle" coords="30px,50px,60px"href="https://www.instagram.com" />
+</map>
+<map name="abo">
+<area shape="circle" coords="30px,50px,60px"href="https://www.twitter.com" />
+</map>
+<map name="abi">
+<area shape="circle" coords="30px,50px,60px"href="https://www.youtube.com" />
+</map>
+
+</ul>
+</div>
+<br/>
+
+<div class="row fot1">
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Albums</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">English </a>&nbsp;<span class="bor1"></span>
+<a href="#">Hindi </a>&nbsp;<span class="bor1"></span>
+<a href="#">Telugu </a>&nbsp;<span class="bor1"></span>
+<a href="#">Tamil </a>&nbsp;<span class="bor1"></span>
+<a href="#">Bengali </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Artists</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Arijit Singh </a>&nbsp;<span class="bor1"></span>
+<a href="#">Neha Kakkar </a>&nbsp;<span class="bor1"></span>
+<a href="#">Armaan Malik </a>&nbsp;<span class="bor1"></span>
+<a href="#">ED Sheeran </a>&nbsp;<span class="bor1"></span>
+<a href="#">Atif Aslam </a>&nbsp;<span class="bor1"></span>
+<a href="#">Justin Beiber </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rahat Fateh Ali Khan </a>&nbsp;<span class="bor1"></span>
+<a href="#">Honey Singh </a>&nbsp;<span class="bor1"></span>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Genres</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Bollywood Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rock Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Jazz Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Pop Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rap Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Classical Songs </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+</div>
+
+<br/>
+<div class="text-center">
+<div class="sdu"><a class="cs" href="#">About Us </a>&nbsp;&nbsp;<a class="cs" href="#">Terms & Conditions </a>
+&nbsp;<a class="cs" href="#">Privacy Policy </a> 
+&nbsp; <a class="cs" href="#">Contact </a></div>
+<div class="tyu"> 
+<span class="rt"> © 2019 Music World. All rights reserved. </span><br/>
+<a class="cs" href="#">eCommerce</a> <span class="rt">by</span> <a class="cs" href="#">Aptech NN</a> </div>
+</div>
+
+  
+</div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>

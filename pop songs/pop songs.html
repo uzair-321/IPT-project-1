@@ -1,0 +1,693 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>English Pop Singers</title>
+
+<link rel="shortcut icon" type="image/png" href="../favicon-32x32.png"/>
+<link rel="stylesheet" type="text/css" href="../Index.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<style>
+.abcd1{
+	font-family:Lucida Bright;font-size:18px;}
+.abcd{font-size:11px;font-family:Verdana, Geneva, sans-serif;}
+
+.service-wrap{padding:40px 0; text-align:center;}
+.service-wrap h3 a{font-size:24px; text-decoration:none; color:#000;}
+.service-wrap h3 a:hover{color:#999}
+.service-details{background:#fff; padding:15px 15px 25px 15px;}
+.service-details h3{margin-top:10px;}
+.readmore a{position:relative; vertical-align: middle; z-index:1000; background:#000; color:#fff !important; text-shadow: 0 0 2px rgba(0, 0, 0, 0.36); text-decoration:none; font-size:14px; text-transform:uppercase; font-weight:bold; padding:10px 24px; display:inline-block;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0,0,0,0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+}
+.readmore a:hover{color:#000 !important;}
+.readmore a:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background:#999;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+	
+}
+.readmore a:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+.inner-content .service-details{background:#f3f3f3;}
+.inner-content .service-wrap{background:none; padding:0;} 
+.service-image{position:relative; overflow:hidden;}
+.serviceList li{list-style:none; margin:15px 0;}
+.service-image img {
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.serviceList li:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.hoverlink{background:rgba; position:absolute; top:0; left:0; width:100%; height:100%; display:none;}
+
+
+
+.a1{
+	font-size:28px;
+	font-family:Trebuchet MS;	
+	font-style:Bold;
+	text-transform:uppercase;
+	background: linear-gradient(to right, #FFF 0%, #FFF, #FFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.a3{
+	border:solid;
+	border-radius:40px;
+	float:right;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			
+}
+.a3:hover{
+	background: linear-gradient(to right,#999, #000 , #999 100%);
+}
+.sb{
+	border-radius:100%;
+	color:#FFF;
+	background: linear-gradient(to right, #999 0%, #999 100%);}
+.sb:hover{	background: linear-gradient(to right, #CCC 0%, #000 100%);
+color:#FFF;
+}	
+		
+.bu1{
+	background-color:#330867;
+	color:#FFF;
+	border:1px solid #30CFD0;
+	font-size:30px;
+}		
+.bu1:hover{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+}
+.a6{
+	background: linear-gradient(to right, #FFF 0%, #FFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#mainMenu li {
+	display:block;
+}
+
+#mainMenu a {
+	display:block;
+}
+
+
+#mainMenu li {
+	position:relative;
+	display:block;
+
+}
+#mainMenu a {
+	display:block;
+}
+
+#mainMenu li ul {
+	position:absolute;
+	left:100%;
+	top:1px;
+	display:none;
+	font-size:18px;
+}
+#mainMenu li:hover ul {
+	display:block;
+
+}
+.dropdown-menu{
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+border-radius:10%;
+}
+.head1{
+	font-size:50px;
+	font-family:ChocolateBox;
+	background: linear-gradient(to right, #66F, #000 ,#66F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	 text-shadow: 5px 4px 3px #CCCCCC;
+}
+.fs1 a{
+	color:#FFF;
+	text-decoration:none;
+}
+.cat1 a{
+	color:#CCC;
+	text-decoration:none;
+}
+.cat2 a{
+	color:#000;
+	text-decoration:none;
+}
+
+
+</style>
+
+<body class="body1">
+
+<nav class="navbar navbar-inverse navbar">
+<div class="container-fluid navbar-header">
+<a class="navbar-brand a1" href="../Index.html">MusicWorld</a>
+
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ab">
+<span class="sr-only">Show and Hide the Navigation </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="ab">
+<ul class="nav navbar-nav a2">
+<li><a href="../Index.html">Home</a></li>
+<li class="dropdown" id="mainMenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Catogeries of Music <span class="caret"></span></a> 
+
+
+
+
+<ul class="dropdown-menu">
+<li class="dd1"><a href="Rock Songs.html"> Rock Songs</a>
+<ul class="dropdown-menu">
+<li><a href="../rock songs/rock songs.html"> English Rock Singers</a></li>
+<li><a href="../hindi rock singers/hindi rock singers.html"> Hindi Rock Singers</a></li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Jazz Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../jazz songs/jazz songs.html"> English Jazz Singers </a></li>
+</ul>
+</li>
+
+<li class="dd1"><a href="#"> Pop Songs </a>
+<ul class="dropdown-menu">
+<li><a href="pop songs.html"> English Pop Singers </a> </li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Rap Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../rap song/rap song.html"> English Rap Singers </a> </li>
+</ul>
+</li>
+
+<li class="dd1"><a href="#"> Classical Songs </a>
+<ul class="dropdown-menu">
+<li><a href="../classical songs/classical songs.html"> English Classical Singers </a></li>
+</ul>
+</li>
+
+
+</ul>
+</li>
+<li><a href="#">About US</a></li>
+<li><a href="#">FAQs</a></li>
+
+
+
+
+<form class="nav navbar-nav">
+<div class="input-group ser2">
+<input class="s1" type="text" name="search" placeholder="  Search Songs.."/>
+
+
+<button class="btn sb">
+<span class="glyphicon glyphicon-search"></span>
+</button>
+
+</div>
+
+
+
+</form>
+</ul>
+
+</div>
+</nav>
+
+
+
+
+
+
+
+
+<!--service start-->
+<div class="service-wrap">
+  <div class="container">
+    <h1 class="head1">Some Famous English  <span>Pop Singers</span></h1>
+    <ul class="row serviceList">
+      
+      <li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A13"><a href="#"><img src="Adele_2016.jpg" height="240px"></a>
+ 
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Adele</a></h3>
+          <p>Adele Laurie Blue Adkins MBE is an English singer-songwriter. After graduating from the BRIT School in 2006, Adele signed a recording contract with XL Recordings. In 2007, she received the Brit Awards Critics' Choice award and won the BBC Sound of 2008 poll.
+<br/>Genres: Pop</p>
+          <div data-toggle="modal" data-target="#A13" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A13">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="images.jpg" height="200" width="200"/>
+
+<h1 class="head1">Adele</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+<p class="abcd">Adele Laurie Blue Adkins MBE (/əˈdɛl/; born 5 May 1988) is an English singer-songwriter. After graduating from the BRIT School in 2006, Adele signed a recording contract with XL Recordings. In 2007, she received the Brit Awards Critics' Choice award and won the BBC Sound of 2008 poll. Her debut album, 19, was released in 2008 to commercial and critical success. It is certified eight times platinum in the UK, and three times platinum in the US. The album contains her first song, "Hometown Glory", written when she was 16, which is based on her home suburb of West Norwood in London. An appearance she made on Saturday Night Live in late 2008 boosted her career in the US. At the 51st Grammy Awards in 2009, Adele received the awards for Best New Artist and Best Female Pop Vocal Performance.
+
+Adele released her second studio album, 21, in 2011. The album was critically well received and surpassed the success of her debut, earning numerous awards in 2012, among them a record-tying six Grammy Awards, including Album of the Year; two Brit Awards, including British Album of the Year; and three American Music Awards, including Favorite Pop/Rock Album. The album has been certified 17 times platinum in the UK, and is overall the fourth best-selling album in the nation. In the US, it has held the top position longer than any album since 1985, and is certified diamond. The best-selling album worldwide of 2011 and 2012, 21 has sold over 31 million copies. The success of 21 earned Adele numerous mentions in the Guinness Book of World Records. She was the first female artist to simultaneously have two albums in the top five of the Billboard 200 and two singles in the top five of the Billboard Hot 100, as well as the first woman in the history of the Billboard Hot 100 to have three simultaneous top 10 singles as a lead artist with "Rolling in the Deep", "Someone Like You", and "Set Fire to the Rain", all of which also topped the chart. 21 is the longest-running number one album by a female solo artist in the history of the UK and US Album Charts.<a href="https://en.wikipedia.org/wiki/Adele">see more</a></p>
+</div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Adele/adele.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Adele/a events.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>         
+
+
+      <li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A14" ><a href="#"><img src="240px-Ariana_Grande_Elle_2018.png"></a>
+       
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Ariana Grande</a></h3>
+          <p>Ariana Grande-Butera is an American singer, songwriter and actress. Born in Florida to a family of New York-Italian origin, she began her career in 2008 in the Broadway musical 13, before playing the role of Cat Valentine in the Nickelodeon television series Victorious and in its spinoff Sam & Cat.
+<br/>Genres: Pop </p>
+          <div data-toggle="modal" data-target="#A14" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A14">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="images (1).jpg" height="200" width="200"/>
+
+<h1 class="head1">Ariana Grande</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+<p class="abcd">Ariana Grande-Butera (/ˌɑːriˈɑːnə ˈɡrɑːndeɪ/;[1] born June 26, 1993)[2] is an American singer, songwriter and actress. Born in Florida to a family of New York-Italian origin, she began her career in 2008 in the Broadway musical 13, before playing the role of Cat Valentine in the Nickelodeon television series Victorious (2010–13) and in its spinoff Sam & Cat (2013–14). Grande made her first musical appearance on the soundtrack for Victorious and was signed to Republic Records in 2011 after music executive Monte Lipman came across one of her YouTube videos covering songs.
+
+Grande released her debut album, Yours Truly in 2013, which was influenced by 1990s R&B and 1950s doo-wop, and peaked atop the US Billboard 200. Grande ventured into EDM on her second album, My Everything (2014), which also topped the US charts and featured four top ten singles on the Billboard Hot 100, the most by any artist in 2014: "Problem", "Break Free", "Bang Bang", and "Love Me Harder". Her third album, Dangerous Woman (2016), explored pop and dance, and became her first number-one album in the United Kingdom. She experimented with trap on her next two releases, Sweetener (2018) and Thank U, Next (2019), with the former winning a Grammy Award for Best Pop Vocal Album, and the latter having the largest streaming week for a pop album in music history. With the singles "Thank U, Next" , "7 Rings", and "Break Up with Your Girlfriend, I'm Bored", Grande became the first solo artist to hold the top three spots on the Billboard Hot 100 simultaneously, and the second musical act overall after The Beatles in 1964. Grande is also the first artist to have the lead singles from each of their first five studio albums debut within the top-ten on the US charts.[3]
+
+Critics have compared Grande's wide vocal range to that of Mariah Carey. Her accolades include one Grammy Award, one BRIT Award, three American Music Awards, three MTV Europe Music Awards and two MTV Video Music Awards. She has supported a range of charities[4] and has a large following on social media, becoming the most followed woman on Instagram in February 2019.[5][6] In 2016 and 2019, Time named Grande as one of the 100 most influential people in the world on their annual list,[7][8] and in 2018, Billboard named her Woman of the Year...<a href="https://en.wikipedia.org/wiki/Ariana_Grande">see more</a></p></div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Ariana Grande/AG.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Ariana Grande/events.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>     
+      
+<li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A15"><a href="#"><img src="220px-Selena_Gomez_2016.png"/></a>
+         
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Selena Gomez</a></h3>
+          <p>Selena Marie Gomez is an American singer, actress, and producer. After appearing on the children's television series Barney & Friends, she received wider recognition for her portrayal of Alex Russo on the Disney Channel television series Wizards of Waverly Place, which aired for four seasons from 2007 until 2012.
+<br/>Genres: Pop </p>
+          <div data-toggle="modal" data-target="#A15" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A15">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="download.jpg" height="200" width="200"/>
+
+<h1 class="head1">Selena Gomez</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+<p class="abcd">Selena Marie Gomez (born July 22, 1992) is an American singer, actress, and producer.[2][3] After appearing on the children's television series Barney & Friends, she received wider recognition for her portrayal of Alex Russo on the Disney Channel television series Wizards of Waverly Place, which aired for four seasons from 2007 until 2012.
+
+With her former band Selena Gomez & the Scene, she attained the top-ten albums Kiss & Tell (2009), A Year Without Rain (2010) and When the Sun Goes Down (2011) on the US Billboard 200. As a solo artist, Gomez has released the two number-one albums Stars Dance (2013) and Revival (2015). She has also earned seven top-ten entries on the US Billboard Hot 100: "Come & Get It", "The Heart Wants What It Wants", "Good for You" with ASAP Rocky, "Same Old Love", "Hands to Myself", "We Don't Talk Anymore" and "It Ain't Me" with Kygo. In 2017, Billboard reported that Gomez has sold over 7 million albums and 22 million singles worldwide.[4]
+
+Gomez's acting credits include starring roles in the films Another Cinderella Story (2008), Princess Protection Program (2009), Wizards of Waverly Place: The Movie (2009), Ramona and Beezus (2010), Monte Carlo (2011), Spring Breakers (2012), Getaway (2013) and The Fundamentals of Caring (2016). She voices the character of Mavis in the Hotel Transylvania film franchise. Outside of entertainment, Gomez released her own clothing line through Kmart in 2010 and a self-titled fragrance in 2013. In 2017, she released a limited-edition collection of handbags called "Selena Grace" that she designed in collaboration with the luxury brand Coach, Inc. She has worked with various charitable organizations for years and became a UNICEF ambassador at the age of seventeen. Gomez was the most followed Instagram user in the world before being surpassed by athlete Cristiano Ronaldo in late October 2018.[5][6] Gomez has earned numerous awards throughout her career, including an ALMA Award, an American Music Award, an MTV Video Music Award, a People's Choice Award, two Billboard Women in Music Awards, and eighteen Teen Choice Awards...<a href="https://en.wikipedia.org/wiki/Selena_Gomez">see more</a></p></div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Selena Gomez/Selena Gomez.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Bruno Mars/events b.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>       
+
+<li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A16"><a href="#"><img src="220px-BrunoMars24KMagicWorldTourLive_(cropped).jpg"/></a>
+          
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Bruno Mars</a></h3>
+          <p>Peter Gene Hernandez, known professionally as Bruno Mars, is an American singer, songwriter, multi-instrumentalist, record producer, and dancer. He is known for his stage performances, retro showmanship and for performing in a wide range of musical styles, including R&B, funk, pop, soul, reggae, hip hop, and rock.
+<br/>Genres: Pop </p>
+          <div data-toggle="modal" data-target="#A16" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A16">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="download (1).jpg" height="200" width="200"/>
+<h1 class="head1"></h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+<p class="abcd">Peter Gene Hernandez (born October 8, 1985), known professionally as Bruno Mars, is an American singer, songwriter, multi-instrumentalist, record producer, and dancer. He is known for his stage performances, retro showmanship and for performing in a wide range of musical styles, including R&B, funk, pop, soul, reggae, hip hop, and rock. Mars is accompanied by his band, The Hooligans, who play a variety of instruments, such as electric guitar, bass, piano, keyboards, drums and horns, and also serve as backup singers and dancers.
+
+Born and raised in Honolulu, Hawaii, Mars moved to Los Angeles in 2003 to pursue a musical career. After being dropped by Motown Records, Mars signed a recording contract with Atlantic Records in 2009. In the same year, he co-founded the production team The Smeezingtons, responsible for various successful singles for Mars himself and other artists. Mars rose to fame in 2010 with the release of the successful singles "Nothin' on You" by B.o.B and "Billionaire" by Travie McCoy, both of which featured his vocals on the hooks. His debut studio album Doo-Wops & Hooligans (2010), peaked at number three on the Billboard 200 chart in the United States and reached number one in Canada, Germany, the Netherlands and the United Kingdom. It spawned the international number-one singles "Just the Way You Are", "Grenade", and "The Lazy Song". The former won a Grammy Award for Best Male Pop Vocal Performance. In 2011, Mars recorded the single "It Will Rain" for the film The Twilight Saga: Breaking Dawn – Part 1 (2011).
+
+Mars' second album, Unorthodox Jukebox (2012), peaked at number one in the US, Australia, Canada, Switzerland, and the UK, winning a Grammy Award for Best Pop Vocal Album. Its singles "Locked Out of Heaven" and "When I Was Your Man", reached number one on the US Billboard Hot 100 chart. In 2014, Mars collaborated with Mark Ronson on "Uptown Funk", which topped many music charts worldwide, including the US, Australia, Canada, New Zealand, and the UK. The song won Record of the Year and Best Pop Duo/Group Performance at the Grammys. In 2016, Shampoo Press & Curl replaced The Smeezingtons on the composition of Mars' third studio album, the R&B-focused, 24K Magic. The record debuted at number two in the United States, Canada, France, and New Zealand and received seven Grammy Awards, winning the major categories of Album of the Year, Record of the Year, and Song of the Year. The album yielded the successful singles "24K Magic", "That's What I Like", and "Finesse".
+
+Mars has sold over 180 million singles and 26 million albums worldwide, making him one of the best-selling artists of all time. He has released seven number-one singles on the Billboard Hot 100 since his career launched in 2010, attaining his first five faster than any male artist since Elvis Presley. As a songwriter, he was included in Music Week and Billboard magazine as one of the best songwriters of 2011 and 2013, respectively. Mars has received several awards and nominations, including 11 Grammy Awards, three Brit Awards, nine American Music Awards, 10 Soul Train Awards and holds three Guinness World Records. He has appeared in Time magazine's list of the 100 most influential people in the world in 2011 and Forbes magazine's lists of '30 under 30' in 2013, the world's most powerful celebrities in 2014, and Celebrity 100 in 2018.<a href="https://en.wikipedia.org/wiki/Bruno_Mars">see more</a></p></div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Bruno Mars/bm.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Charlie Puth/events cp.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>      
+
+<li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A17"><a href="#"><img src="220px-Justin_Bieber_in_2015.jpg"></a>
+   
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Justin Bieber</a></h3>
+          <p>Justin Drew Bieber is a Canadian singer-songwriter. After talent manager Scooter Braun discovered his YouTube videos covering songs, he was signed to RBMG in 2008. Bieber then released his debut EP, My World, in late 2009.
+ <br/>Genres: Pop </p>
+          <div data-toggle="modal" data-target="#A17" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A17">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="download (2).jpg" height="200" width="200"/>
+
+<h1 class="head1">Justin Bieber</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+<p class="abcd">Justin Drew Bieber (/ˈbiːbər/; born March 1, 1994) is a Canadian singer-songwriter.[4] After talent manager Scooter Braun discovered his YouTube videos covering songs, he was signed to RBMG in 2008. Bieber then released his debut EP, My World, in late 2009. It was certified platinum in the US; he became the first artist to have seven songs from a debut record chart on the Billboard Hot 100.[5] Bieber released his first studio album, My World 2.0, in 2010. It debuted at number one in several countries, was certified triple platinum in the US,[6] and contained his single "Baby", which debuted at number five on the Billboard Hot 100 and sold 12 million units.
+
+Following his debut album and promotional tours, he released his 3D biopic-concert film Justin Bieber: Never Say Never and his second studio album, Under the Mistletoe (2011), which debuted at number one on the Billboard 200. His third studio album, Believe (2012) generated the single "Boyfriend", which reached number one in Canada. His fourth studio album Purpose was released in 2015, spawning three number one singles: "What Do You Mean?", "Sorry", and "Love Yourself". Afterwards, Bieber was featured on several successful collaborations, including "Cold Water", "Let Me Love You", "Despacito (Remix)", and "I'm the One". His US album and singles sales total 44.7 million.[6][7] He has sold an estimated 150 million records, making him one of the world's best-selling music artists, and became the second person to reach 100 million followers on Twitter in August 2017 after Katy Perry.
+
+Bieber has won numerous awards throughout his career, including an American Music Award for Artist of the Year in 2010 and 2012, a Grammy Award for Best Dance Recording for the song "Where Are Ü Now", and a Latin Grammy Award.[8] He has been listed three times by Forbes magazine among the top ten most powerful celebrities in the world, in 2011, 2012, and 2013.[9] In 2016, Bieber became the first artist to surpass 10 billion total video views on Vevo<a href="https://en.wikipedia.org/wiki/Justin_Bieber">see more</a></p></div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Justin Bieber/jb.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Justin Bieber/events jb.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>      
+      
+<li class="col-md-4 col-sm-6">
+        <div class="service-image" data-toggle="modal" data-target="#A18"><a href="#"><img src="220px-Charlie_Puth_2017_2_(cropped).jpg"/></a>
+        
+        </div>
+        <div class="service-details">
+          <h3><a href="#">Charlie Puth</a></h3>
+          <p>Charles Otto Puth Jr. ( born December 2, 1991) is an American singer, songwriter and record producer. His initial exposure came through the viral success of his song videos uploaded to YouTube.
+<br/>Genres: Pop </p>
+          <div data-toggle="modal" data-target="#A18" class="readmore"><a href="#">Read More</a></div>
+        </div>
+      </li>
+      
+<div class="modal fade" id="A18">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header head12">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<img class="img1" src="images (2).jpg" height="200" width="200"/>
+
+<h1 class="head1">Charlie Puth</h1>
+</div>
+<div class="modal-body">
+<h1 class="abcd1">Personal Life &amp; Career Achievements</h1>
+<p class="abcd">Charles Otto Puth Jr. (/puːθ/; born December 2, 1991) is an American singer, songwriter and record producer. His initial exposure came through the viral success of his song videos uploaded to YouTube.
+
+"See You Again" was released as Puth's debut single in 2015, which he co-wrote, co-produced, and performed with Wiz Khalifa for the Furious 7 soundtrack as a tribute to Paul Walker. It peaked at number one on the US Billboard Hot 100 for 12 non-consecutive weeks. After the success of "See You Again", he gained worldwide recognition for multiple subsequent releases, including his debut single "Marvin Gaye", which featured American singer-songwriter Meghan Trainor. The song topped charts in New Zealand, Ireland, and the United Kingdom.
+
+Puth's debut studio album, Nine Track Mind, was released in January 2016,[1] and was preceded by the singles "One Call Away" and "We Don't Talk Anymore", which peaked at number 12 and number nine, respectively on the US Billboard Hot 100. In 2017, he released two songs, "Attention" and "How Long" from his second studio album, Voicenotes, with the former peaking at number five on Billboard Hot 100...<a href="https://en.wikipedia.org/wiki/Charlie_Puth">see more</a></p></div>
+<div class="modal-footer modf1">
+<div class="row fot1">
+
+<div class="col-xs-4 cat2">
+<p><a href="#">Albums Collections</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Charlie Puth/Charlie Puth.html">Songs</a></p>
+</div>
+<div class="col-xs-4 cat2">
+<p><a href="Selena Gomez/events sg.html">Events</a></p>
+</div>
+
+</div>
+</div>
+
+
+</div>
+</div>
+</div>      
+
+    </ul>
+  </div>
+</div>
+<!--service end--> 
+
+
+
+<footer>
+<div class="footer-main-div">
+<div class="footer-social-icons">
+<ul>
+
+<li class="img1"><img class="icons" src="facebook-square-brands.svg" height="30px" width="20px" usemap="#abc"/></li>
+<li><img src="instagram-brands.svg" height="30px" width="20px" usemap="#abg"/></li>
+<li><img src="twitter-square-brands.svg" height="30px" width="20px" usemap="#abo"/></li>
+<li><img src="youtube-square-brands.svg" height="30px" width="20px" usemap="#abi"/></li>
+
+<map name="abc">
+<area shape="circle" coords="30px,50px,60px"href="https://www.facebook.com" />
+</map>
+<map name="abg">
+<area shape="circle" coords="30px,50px,60px"href="https://www.instagram.com" />
+</map>
+<map name="abo">
+<area shape="circle" coords="30px,50px,60px"href="https://www.twitter.com" />
+</map>
+<map name="abi">
+<area shape="circle" coords="30px,50px,60px"href="https://www.youtube.com" />
+</map>
+
+</ul>
+</div>
+<br/>
+
+<div class="row fot1">
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Albums</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">English </a>&nbsp;<span class="bor1"></span>
+<a href="#">Hindi </a>&nbsp;<span class="bor1"></span>
+<a href="#">Telugu </a>&nbsp;<span class="bor1"></span>
+<a href="#">Tamil </a>&nbsp;<span class="bor1"></span>
+<a href="#">Bengali </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Artists</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Arijit Singh </a>&nbsp;<span class="bor1"></span>
+<a href="#">Neha Kakkar </a>&nbsp;<span class="bor1"></span>
+<a href="#">Armaan Malik </a>&nbsp;<span class="bor1"></span>
+<a href="#">ED Sheeran </a>&nbsp;<span class="bor1"></span>
+<a href="#">Atif Aslam </a>&nbsp;<span class="bor1"></span>
+<a href="#">Justin Beiber </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rahat Fateh Ali Khan </a>&nbsp;<span class="bor1"></span>
+<a href="#">Honey Singh </a>&nbsp;<span class="bor1"></span>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Genres</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Bollywood Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rock Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Jazz Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Pop Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rap Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Classical Songs </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+</div>
+
+<br/>
+<div class="text-center">
+<div class="sdu"><a class="cs" href="#">About Us </a>&nbsp;&nbsp;<a class="cs" href="#">Terms & Conditions </a>
+&nbsp;<a class="cs" href="#">Privacy Policy </a> 
+&nbsp; <a class="cs" href="#">Contact </a></div>
+<div class="tyu"> 
+<span class="rt"> © 2019 Music World. All rights reserved. </span><br/>
+<a class="cs" href="#">eCommerce</a> <span class="rt">by</span> <a class="cs" href="#">Aptech NN</a> </div>
+</div>
+
+  
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

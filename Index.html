@@ -1,0 +1,1479 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>MusicWorld</title>
+<link rel="shortcut icon" type="image/png" href="favicon-32x32.png"/>
+<link rel="stylesheet" type="text/css" href="Index.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!--Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link href="../jquery-ui-1.12.1.custom/jquery-ui.css" rel="stylesheet">
+<script src="../jquery-ui-1.12.1.custom/external/jquery/jquery.js"></script>
+<script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+</head>
+<style>
+.a1{
+	font-size:28px;
+	font-family:Trebuchet MS;	
+	font-style:Bold;
+	text-transform:uppercase;
+	background: linear-gradient(to right, #FFF 0%, #FFF, #FFF);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	
+}
+
+.a3{
+	border:solid;
+	border-radius:40px;
+	font-size:16px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+			
+}
+.a3:hover{
+	background: linear-gradient(to right,#999, #000 , #999 100%);
+}
+.sb{
+	border-radius:100%;
+	color:#FFF;
+	background: linear-gradient(to right, #999 0%, #999 100%);}
+.sb:hover{	background: linear-gradient(to right, #CCC 0%, #000 100%);
+color:#FFF;
+}	
+		
+.bu1{
+	background-color:#330867;
+	color:#FFF;
+	border:1px solid #30CFD0;
+	font-size:30px;
+}		
+.bu1:hover{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+}
+.a6{
+	background: linear-gradient(to right, #FFF 0%, #FFF 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	text-align:center;
+}		
+.pic1{
+	 border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width:180px;
+  height:130px;
+  display: block;
+ 
+}
+.son1{
+	position:relative;
+	left:7%;	
+}
+
+.son1:hover .ico1{
+	color:#FFF;
+  opacity: 1;
+}
+
+.son2{
+	position:relative;
+	left:7%;
+}
+.son2:hover .ico1{
+	color:#FFF;
+  opacity: 1;
+}
+.son3{
+	position:fixed;
+	left:24%;
+}
+.son3:hover .ico1{
+	color:#FFF;
+  opacity: 1;
+}
+
+
+.ico1{	
+	opacity:0;
+	color:#FFF;
+  transition: .3s ease;	
+}
+.ico1:hover{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+
+
+
+.pl1{
+	font-size:36px;
+	position:fixed;
+	top:33%;
+	left:14%;
+}
+.pl3{
+	font-size:36px;
+	position:fixed;
+	top:33%;
+	left:31%;
+}
+.pl4{
+	font-size:36px;
+	position:fixed;
+	top:33%;
+	left:48%;
+}
+.pl5{
+	font-size:36px;
+	position:fixed;
+	top:33%;
+	left:65%;
+}
+.pl6{
+	font-size:36px;
+	position:fixed;
+	top:33%;
+	left:82%;
+}
+.son4{
+	position:fixed;
+	left:24%;
+}
+.son4:hover .ico1{
+	color:#FFF;
+  opacity: 1;
+}
+.son5{
+	position:fixed;
+	left:41%;
+}
+.son5:hover .ico1 {
+	color:#FFF;
+  opacity: 1;
+}
+.son6{
+	position:fixed;
+	left:58%;
+}
+.son6:hover .ico1 {
+	color:#FFF;
+  opacity: 1;
+}
+.son7{
+	position:fixed;
+	left:75%;
+}
+.son7:hover .ico1{
+	color:#FFF;
+  opacity: 1;
+}
+.arr2{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.arr1{
+	font-size:30px;
+	width:50px;
+	
+}
+.arr12{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:30px;
+	position:absolute;
+	top:30%;
+	left:1%;
+			
+}
+
+.arr13{
+	background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size:30px;
+	position:absolute;
+	top:30%;
+	left:96%;		
+}
+
+.arr1:hover{
+	background-color:#f2f2f2;
+}
+/*.bod1{
+	background-color:#f2f2f2;
+	position:relative;
+	top:-16px;
+	box-shadow:0px 0px 10px 2px inset #aaaaaa;
+	
+}*/
+
+.v1{
+	border-radius:30px;
+	height:155px;
+	
+}
+
+
+.car1{
+	position:relative;
+	top:-17px;
+}
+.alb{
+	font-size:14px;
+	color:#000;
+	
+}
+.alb1{
+	position:fixed;
+	top:100%;
+	left:6%;
+	font-size:13px;
+}
+.head1{
+	font-size:24px;
+	font-family:ChocolateBox;
+	background: linear-gradient(to right, #000, #66F ,#66F);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+#mainMenu li {
+	display:block;
+}
+
+#mainMenu a {
+	display:block;
+}
+
+
+#mainMenu li {
+	position:relative;
+	display:block;
+
+}
+#mainMenu a {
+	display:block;
+}
+
+#mainMenu li ul {
+	position:absolute;
+	left:100%;
+	top:1%;
+	display:none;
+	font-size:18px;
+}
+#mainMenu li:hover ul {
+	display:block;
+}
+.dropdown-menu{
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+border-radius:10%;
+}
+.fs1 a{
+	color:#FFF;
+	text-decoration:none;
+}
+.cat1 a{
+	color:#CCC;
+	text-decoration:none;
+}
+.down1{
+	font-size:24px;
+	display:none;
+}
+</style>
+
+
+
+<body class="body2">
+
+<nav class="navbar navbar-inverse">
+<div class="container-fluid navbar-header">
+<a class="navbar-brand a1" href="Index.html">MusicWorld</a>
+
+
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#ab">
+<span class="sr-only">Show and Hide the Navigation </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+<span class="icon-bar"> </span>
+
+</button>
+</div>
+
+<div class="collapse navbar-collapse" id="ab">
+<ul class="nav navbar-nav a2">
+<li><a href="Index.html">Home</a></li>
+<li class="dropdown" id="mainMenu"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Catogeries of Music <span class="caret"></span></a> 
+
+
+
+
+<ul class="dropdown-menu">
+<li class="dd1"><a href="#"> Rock Songs </a>
+<ul class="dropdown-menu">
+<li><a href="rock songs/rock songs.html"> English Rock Singers</a></li>
+<li><a href="hindi rock singers/hindi rock singers.html"> Hindi Rock Singers </a> </li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Jazz Songs </a>
+<ul class="dropdown-menu">
+<li><a href="jazz songs/jazz songs.html"> English Jazz Singers</a></li>
+</ul>
+</li>
+<li class="dd1"><a href="#"> Pop Songs </a>
+<ul class="dropdown-menu">
+<li><a href="pop songs/pop songs.html"> English Pop Singers</a></li>
+</ul>
+</li>
+
+
+<li class="dd1"><a href="#"> Rap Songs </a>
+<ul class="dropdown-menu">
+<li><a href="rap song/rap song.html"> English Rap Singers </a> </li>
+</ul>
+</li>
+
+<li class="dd1"><a href="#"> Classical Songs </a>
+<ul class="dropdown-menu">
+<li><a href="classical songs/classical songs.html"> English Classical Singers </a></li>
+</ul>
+</li>
+
+
+</ul>
+</li>
+<li><a href="#">About US</a></li>
+<li><a href="#">FAQs</a></li>
+
+
+<form class="nav navbar-nav">
+<div class="input-group ser1">
+<input class="s1" type="text" name="search" placeholder="  Search Songs.." id="a1"/>
+
+
+<button class="btn sb" onClick="abcc()">
+<span class="glyphicon glyphicon-search"></span>
+</button>
+
+</div>
+
+
+
+</form>
+
+</ul>
+
+<ul class="nav navbar-nav navbar-right a3">
+<li data-toggle="modal" data-target="#U1"><a class="a6" href="#">SIGN IN</a></li>
+</ul>
+
+
+
+
+
+
+
+
+<div class="modal fade" id="U1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header m1">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<h1 class="head">Sign in</h1>
+</div>
+
+<div class="modal-body">
+<form>
+
+<label for="e1">Email Address or Username</label><br/>
+<input class="login1" type="text" required name="email" id="e1"/><br/><br/>
+
+<label for="p1">Password</label><br/>
+<input class="login1" type="password" required name="pwd" id="p1"/>
+<br/><br/>
+<label class="checkbox-inline"><input type="checkbox" name="c1"/>Remember me</label>
+
+</form>
+<br/>
+<button onClick="login()" class="btn btn-block bu1"> Sign in</button>
+<span id="U4"></span>
+</div>
+
+<script>
+
+var a=/^([a-z0-9]{3,8})+\@+([a-z]{4,8})+\.+([a-z]{3,6})$/;
+
+var b=/^([a-z0-9]{3,10})$/
+
+function login(){
+
+var input1,input2;
+input1=document.getElementById("e1").value;
+input2=document.getElementById("p1").value;
+
+if(a.test(input1)==false){
+	document.getElementById("U4").innerHTML="(Wrong Email)";
+	document.getElementById("U4").style.color="blue";
+}
+
+if(b.test(input2)==false){
+	document.getElementById("U4").innerHTML="(Wrong Password)";
+	document.getElementById("U4").style.color="blue";
+	
+}
+
+
+var x=document.getElementById("aa2");
+if(x.style.opacity ='0'){
+	
+	
+	
+}
+
+else{
+
+	x.style.opacity='1';
+	document.getElementById("aa2");
+}
+
+
+}
+
+var a=["Taylor Swift","Taylor Swift Songs","Ed Sheeran","Katy Perry","Jennifer Lopez","Ellie Goulding","Madonna","Anita Wardell","Robert McFerrin","Diana Krall","Harry Connick Jr.","Kate Dimbleby","Norah Jones","Adele","Ariana Grande","Selena Marie Gomez","Bruno Mars","Justin Bieber","Charlie Puth","Drake","Sean Paul","Eminem","DJ Khaled","Pitbull","Wiz Khalifa","Celine Dion","Rodney Clarke","Russell Watson","Sarah Brightman","STING","Summer Watson"];
+  
+ $(document).ready(function(e) {
+    
+	$("#a1").autocomplete({
+		source:a
+		});
+		
+ });
+function abcc(){
+	
+	
+		
+		var xx=document.getElementById("a1").value;
+		
+	if(xx=="Taylor Swift"){
+		
+	window.open('', '_self');
+	
+	}	
+else if(xx=="Ed Sheeran"){
+	window.open('https://www.gmail.com', '_blank');
+	
+	}	
+}
+
+</script>
+
+</script>
+
+
+<a class="down1" href="#"><span id="aa2" class="glyphicon glyphicon-download-alt"></span></a>
+
+
+
+
+<div class="modal-footer">
+<div class="foot">
+
+<p>Don't have an account?</p>
+
+<a href="#" data-toggle="modal" data-target="#U2">Create an Account</a>
+
+</div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="modal fade" id="U2">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header m1">
+<a href="#" data-dismiss="modal" class="close">&times;</a>
+<h1 class="head">Create an Account</h1>
+</div>
+
+<div class="modal-body">
+<form>
+
+<input class="login1" type="text" name="First name" placeholder=" First name"/>&nbsp;&nbsp;
+<input class="login1" type="text" name="Last name" placeholder=" Last name"/><br/><br/>
+<input class="login1" type="email" name="email" placeholder=" Your email"/><br/><br/>
+<input class="login1" type="password" name="pwd" placeholder=" New Password"/>
+
+<h1 class="birth1">Your Date of Birth</h1><br/>
+
+<select name="month">
+<option value="month"> Month</option>
+<option value="january"> January</option>
+<option value="february"> February</option>
+<option value="march"> March</option>
+<option value="april"> April</option>
+<option value="may"> May</option>
+<option value="june"> June</option>
+<option value="july"> July</option>
+<option value="august"> August</option>
+<option value="september"> September</option>
+<option value="october"> October</option>
+<option value="november"> November</option>
+<option value="december"> December</option>
+</select>
+<select name="days">
+<option value="days">Days</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option>
+</select>
+<select name="years">
+<option value="years">Years</option>
+<option value="1985">1985</option>
+<option value="1986">1986</option>
+<option value="1987">1987</option>
+<option value="1988">1988</option>
+<option value="1989">1989</option>
+<option value="1990">1990</option>
+<option value="1991">1991</option>
+<option value="1992">1992</option>
+<option value="1993">1993</option>
+<option value="1994">1994</option>
+<option value="1995">1995</option>
+<option value="1996">1996</option>
+<option value="1997">1997</option>
+<option value="1998">1998</option>
+<option value="1999">1999</option>
+<option value="2000">2000</option>
+<option value="2001">2001</option>
+</select>
+
+
+</form>
+<br/><br/>
+<button class="btn btn-block bu1"> Create</button>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+
+
+</nav>
+
+
+
+<div class="carousel">
+
+<div class="carousel slide car1" data-ride="carousel" data-interval="2000" id="a1">
+
+<div class="carousel-inner">
+
+<div class="item active">
+<img src="Latest-song-modern-music-HD-wallpaper.jpg" style="height:450px; width:100%";/>
+</div>
+
+<div class="item">
+<img src="nirvana-wallpapers-hd-On-wallpaper-hd.jpg" style="height:450px; width:100%";/>
+</div>
+
+<div class="item">
+<img src="songs-wallpapers_625193221.jpg" style="height:450px; width:100%";/>
+</div>
+
+</div>
+
+
+<a class="left carousel-control" data-slide="prev" href="#a1"><span class="glyphicon glyphicon-chevron-left"></span></a>
+<a class="right carousel-control" data-slide="next" href="#a1"><span class="glyphicon glyphicon-chevron-right"></span></a>
+
+<ol class="carousel-indicators">
+<li data-target="#a1" data-slide-to="0" class="active"></li>
+<li data-target="#a1" data-slide-to="1"></li>
+<li data-target="#a1" data-slide-to="2"></li>
+</ol>
+
+
+
+</div>
+</div>
+
+
+
+<div class="bod1">
+<br/>
+<div class="carousel">
+<h1 class="head1 page-header">Trending Songs
+<a class="va1" href="#">View All</a>
+</h1>
+<div class="carousel slide" data-ride="carousel" data-interval="0" id="a11"> 
+
+
+<div class="carousel-inner v1">
+<div class="row item active">
+
+<div class="col-sm-1 son1">   
+<a class="pl1" onClick="myFunction()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a> 
+<a onClick="myFunction()" href="#" id="pic2"> <img class="pic1" src="download (8).jpg"/> </a>
+</div>
+<a class="sn1" href="#">First Class</a>
+
+
+<div class="col-sm-1 son3">
+<a class="pl3" onclick="myFunction2()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction2()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_2437469.jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">On my way</a>
+
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1551078085.jpg"/>
+</a>
+</div>
+<a class="sn3" href="#">Duniya</a>
+
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_2426541.jpg"/>
+</a>
+</div>
+<a class="sn4" href="#">Sucker</a>
+
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="download (9).jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">Ve Maahi</a>
+
+
+</div>
+
+
+
+<div class="row item">
+
+<div class="col-sm-1 son2">
+<a class="pl1" onClick="myFunction1()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onClick="myFunction1()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_2436445.jpg"/>
+</a>
+</div>
+<a class="sn1" href="#">Here With Me</a>
+
+
+<div class="col-sm-1 son4">
+<a class="pl3" onclick="myFunction4()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1552640726.jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">Teri Mitti</a>
+
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_2422001.jpg"/>
+</a>
+</div>
+<a class="sn33" href="#">I Can't Get Enough</a>
+
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="download (4).jpg"/>
+</a>
+</div>
+<a class="sn44" href="#">Ghar More Pardesiya</a>
+
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_2451259.jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">SouthSide</a>
+
+
+
+</div>
+
+
+
+
+<a class="left arr12" data-slide="prev" href="#a11">&lang;&lang;</a>
+
+
+<a class="right arr13" data-slide="next" href="#a11">&rang;&rang;<span class="glyphicon arr2"></span>
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+
+<div class="carousel">
+<h1 class="head1 page-header">New Hindi Songs Releases
+<a class="va1" href="#">View All</a>
+</h1>
+<div class="carousel slide" data-ride="carousel" data-interval="0" id="a12"> 
+
+
+<div class="carousel-inner v1">
+<div class="row item active">
+
+
+<div class="col-sm-1 son1">   
+<a class="pl1" onClick="myFunction()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a> 
+<a onClick="myFunction()" href="#" id="pic2"> <img class="pic1" src="download (4).jpg"/> </a>
+</div>
+<a class="sn11" href="#">Ghar More Pardesiya</a>
+
+
+<div class="col-sm-1 son3">
+<a class="pl3" onclick="myFunction2()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction2()" href="#" id="pic1">
+<img class="pic1" src="download (5).jpg"/>
+</a>
+</div>
+<a class="sn22" href="#">Safar</a>
+
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="download (6).jpg"/>
+</a>
+</div>
+<a class="sn333" href="#">Sanu Kehndi</a>
+
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="download (7).jpg"/>
+</a>
+</div>
+<a class="sn444" href="#">Garje Gajraj Hamare</a>
+
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="download (8).jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">First Class</a>
+
+
+</div>
+
+
+
+<div class="row item">
+
+<div class="col-sm-1 son2">
+<a class="pl1" onClick="myFunction1()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onClick="myFunction1()" href="#" id="pic1">
+<img class="pic1" src="download (9).jpg"/>
+</a>
+</div>
+<a class="sn1" href="#">Ve Maahi</a>
+
+
+<div class="col-sm-1 son4">
+<a class="pl3" onclick="myFunction4()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="images (2).jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">Jee Len De</a>
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="download (11).jpg"/>
+</a>
+</div>
+<a class="sn3" href="#">Dosti</a>
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="download (12).jpg"/>
+</a>
+</div>
+<a class="sn4" href="#">Main Taare</a>
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="download (10).jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">Bulleya</a>
+
+
+
+</div>
+
+
+
+
+<a class="left arr12" data-slide="prev" href="#a12">&lang;&lang;</a>
+
+
+<a class="right arr13" data-slide="next" href="#a12">&rang;&rang;<span class="glyphicon arr2"></span>
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+
+<div class="carousel">
+<h1 class="head1 page-header">New English Songs Releases
+<a class="va1" href="#">View All</a>
+</h1>
+<div class="carousel slide" data-ride="carousel" data-interval="0" id="a13"> 
+
+
+<div class="carousel-inner v1">
+<div class="row item active">
+
+
+<div class="col-sm-1 son1">   
+<a class="pl1" onClick="myFunction()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a> 
+<a onClick="myFunction()" href="#" id="pic2"> <img class="pic1" src="thumbnails/cheap thrills.jpg" class="img-responsive"/> </a>
+</div>
+<a class="sn1" href="#">Cheap Thrills</a>
+
+
+
+<div class="col-sm-1 son3">
+<a class="pl3" onclick="myFunction2()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction2()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/chanismokers.jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">Cold Play</a>
+
+
+
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/download.jpg"/>
+</a>
+</div>
+<a class="sn3" href="#">Darkside</a>
+
+
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/faded.jpg"/>
+</a>
+</div>
+<a class="sn4" href="#">Faded</a>
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/friends.jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">Friends</a>
+
+
+</div>
+
+
+<div class="row item">
+
+<div class="col-sm-1 son2">
+<a class="pl1" onClick="myFunction1()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onClick="myFunction1()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/gly.jpg"/>
+</a>
+</div>
+<a class="sn1" href="#">Girls Like You</a>
+
+
+<div class="col-sm-1 son4">
+<a class="pl3" onclick="myFunction4()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/happier.jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">Happier</a>
+
+
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/mtyk.jpg"/>
+</a>
+</div>
+<a class="sn33" href="#">More Than You Know</a>
+
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/no lie.jpg"/>
+</a>
+</div>
+<a class="sn4" href="#">No Lie</a>
+
+
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="thumbnails/rockabye.jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">Rockabye</a>
+
+
+
+
+
+</div>
+
+
+
+
+<a class="left arr12" data-slide="prev" href="#a13">&lang;&lang;</a>
+
+
+<a class="right arr13" data-slide="next" href="#a13">&rang;&rang;<span class="glyphicon arr2"></span>
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+<div class="carousel">
+<h1 class="head1 page-header">Best Hindi Songs of the year
+<a class="va1" href="#">View All</a>
+</h1>
+<div class="carousel slide" data-ride="carousel" data-interval="0" id="a14"> 
+
+
+<div class="carousel-inner v1">
+<div class="row item active">
+
+
+<div class="col-sm-1 son1">   
+<a class="pl1" onClick="myFunction()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a> 
+<a onClick="myFunction()" href="#" id="pic2"> <img class="pic1" src="crop_175x175_1549262875.jpg"/> </a>
+</div>
+<a class="sn1" href="#">Coca Cola</a>
+
+
+<div class="col-sm-1 son3">
+<a class="pl3" onclick="myFunction2()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction2()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1549281585.jpg"/>
+</a>
+</div>
+<a class="sn22" href="#">Mungda</a>
+
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1548696274.jpg"/>
+</a>
+</div>
+<a class="sn33" href="#">Poster Lagwa Do</a>
+
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="download (4).jpg"/>
+</a>
+</div>
+<a class="sn444" href="#">Ghar More Pardesiya</a>
+
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1547446909.jpg"/>
+</a>
+</div>
+<a class="sn55" href="#">Apna time Aayega</a>
+
+
+</div>
+
+
+
+<div class="row item">
+
+<div class="col-sm-1 son2">
+<a class="pl1" onClick="myFunction1()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onClick="myFunction1()" href="#" id="pic1">
+<img class="pic1" src="download (8).jpg"/>
+</a>
+</div>
+<a class="sn1" href="#">First Class</a>
+
+
+<div class="col-sm-1 son4">
+<a class="pl3" onclick="myFunction4()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1548683472.jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">Paisa Yeh Paisa</a>
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="download (6).jpg"/>
+</a>
+</div>
+<a class="sn3" href="#">Sanu Kendi</a>
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1546856727.jpg"/>
+</a>
+</div>
+<a class="sn44" href="#">Ek Ladki Ko Dekha</a>
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1544078542.jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">Aankh Marey</a>
+
+
+
+</div>
+
+
+
+
+<a class="left arr12" data-slide="prev" href="#a14">&lang;&lang;</a>
+
+
+<a class="right arr13" data-slide="next" href="#a14">&rang;&rang;<span class="glyphicon arr2"></span>
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+
+
+
+<div class="carousel">
+<h1 class="head1 page-header">Best English Songs of the year
+<a class="va1" href="#">View All</a>
+</h1>
+<div class="carousel slide" data-ride="carousel" data-interval="0" id="a15"> 
+
+
+<div class="carousel-inner v1">
+<div class="row item active">
+
+
+<div class="col-sm-1 son1">   
+<a class="pl1" onClick="myFunction()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a> 
+<a onClick="myFunction()" href="#" id="pic2"> <img class="pic1" src="crop_175x175_2142738.jpg"/> </a>
+</div>
+<a class="sn1" href="#">Girls Like You</a>
+
+
+<div class="col-sm-1 son3">
+<a class="pl3" onclick="myFunction2()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction2()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1866871.jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">Symphony</a>
+
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1926103.jpg"/>
+</a>
+</div>
+<a class="sn333" href="#">I'm the One</a>
+
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1872174.jpg"/>
+</a>
+</div>
+<a class="sn4" href="#">Lush Life</a>
+
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1697241.jpg"/>
+</a>
+</div>
+<a class="sn55" href="#">Work From Home</a>
+
+
+</div>
+
+
+
+<div class="row item">
+
+<div class="col-sm-1 son2">
+<a class="pl1" onClick="myFunction1()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onClick="myFunction1()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1866777.jpg"/>
+</a>
+</div>
+<a class="sn1" href="#">Perfect</a>
+
+
+<div class="col-sm-1 son4">
+<a class="pl3" onclick="myFunction4()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="download (14).jpg"/>
+</a>
+</div>
+<a class="sn2" href="#">Havana</a>
+
+<div class="col-sm-1 son5">
+<a class="pl4" onclick="myFunction3()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction3()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_2019190.jpg"/>
+</a>
+</div>
+<a class="sn3" href="#">I'm Not Her</a>
+
+<div class="col-sm-1 son6">
+<a class="pl5" onclick="myFunction5()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction5()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1686403.jpg"/>
+</a>
+</div>
+<a class="sn444" href="#">This Is What You Came For</a>
+
+<div class="col-sm-1 son7">
+<a class="pl6" onclick="myFunction6()" href="#"><span class="glyphicon glyphicon-play ico1"></span></a>
+<a onclick="myFunction6()" href="#" id="pic1">
+<img class="pic1" src="crop_175x175_1842473.jpg"/>
+</a>
+</div>
+<a class="sn5" href="#">Despacito</a>
+
+
+
+</div>
+
+
+
+
+<a class="left arr12" data-slide="prev" href="#a15">&lang;&lang;</a>
+
+
+<a class="right arr13" data-slide="next" href="#a15">&rang;&rang;<span class="glyphicon arr2"></span>
+</a>
+
+
+
+
+</div>
+</div>
+</div>
+<br/>
+</div>
+
+
+
+
+<footer>
+<div class="footer-main-div">
+<div class="footer-social-icons">
+<ul>
+
+<li class="img1"><img class="icons" src="facebook-square-brands.svg" height="30px" width="20px" usemap="#abc"/></li>
+<li><img src="instagram-brands.svg" height="30px" width="20px" usemap="#abg"/></li>
+<li><img src="twitter-square-brands.svg" height="30px" width="20px" usemap="#abo"/></li>
+<li><img src="youtube-square-brands.svg" height="30px" width="20px" usemap="#abi"/></li>
+
+<map name="abc">
+<area shape="circle" coords="30px,50px,60px"href="https://www.facebook.com" />
+</map>
+<map name="abg">
+<area shape="circle" coords="30px,50px,60px"href="https://www.instagram.com" />
+</map>
+<map name="abo">
+<area shape="circle" coords="30px,50px,60px"href="https://www.twitter.com" />
+</map>
+<map name="abi">
+<area shape="circle" coords="30px,50px,60px"href="https://www.youtube.com" />
+</map>
+
+</ul>
+</div>
+<br/>
+
+<div class="row fot1">
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Albums</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">English </a>&nbsp;<span class="bor1"></span>
+<a href="#">Hindi </a>&nbsp;<span class="bor1"></span>
+<a href="#">Telugu </a>&nbsp;<span class="bor1"></span>
+<a href="#">Tamil </a>&nbsp;<span class="bor1"></span>
+<a href="#">Bengali </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Artists</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Arijit Singh </a>&nbsp;<span class="bor1"></span>
+<a href="#">Neha Kakkar </a>&nbsp;<span class="bor1"></span>
+<a href="#">Armaan Malik </a>&nbsp;<span class="bor1"></span>
+<a href="#">ED Sheeran </a>&nbsp;<span class="bor1"></span>
+<a href="#">Atif Aslam </a>&nbsp;<span class="bor1"></span>
+<a href="#">Justin Beiber </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rahat Fateh Ali Khan </a>&nbsp;<span class="bor1"></span>
+<a href="#">Honey Singh </a>&nbsp;<span class="bor1"></span>
+</div>
+</div>
+
+<div class="col-sm-4">
+<div class="fs1">
+<a href="#">Genres</a>
+</div>
+<br/>
+<div class="cat1">
+<a href="#">Bollywood Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rock Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Jazz Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Pop Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Rap Songs </a>&nbsp;<span class="bor1"></span>
+<a href="#">Classical Songs </a>&nbsp;<span class="bor1"></span>
+
+</div>
+</div>
+
+</div>
+
+<br/>
+<div class="text-center">
+<div class="sdu"><a class="cs" href="#">About Us </a>&nbsp;&nbsp;<a class="cs" href="#">Terms & Conditions </a>
+&nbsp;<a class="cs" href="#">Privacy Policy </a> 
+&nbsp; <a class="cs" href="#">Contact </a></div>
+<div class="tyu"> 
+<span class="rt"> © 2019 Music World. All rights reserved. </span><br/>
+<a class="cs" href="#">eCommerce</a> <span class="rt">by</span> <a class="cs" href="#">Aptech NN</a> </div>
+</div>
+
+  
+</div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+function function(){
+	
+	document.getElementById("yourAudio1").src=x.src;
+	
+	$(document).ready(function(e) {
+        $("#f2").row;
+    });
+	
+}
+
+
+
+function myfunction(){
+
+
+var yourAudio = document.getElementById('yourAudio'),
+    ctrl = document.getElementById('audioControl');
+
+ctrl.onclick = function () {
+
+
+if(ctrl.className == "glyphicon glyphicon-play") {
+        ctrl.className="glyphicon glyphicon-pause";
+       yourAudio["play"]();
+}
+else if (ctrl.className == "glyphicon glyphicon-pause"){
+
+     ctrl.className="glyphicon glyphicon-play";
+    yourAudio["pause"]();
+
+}
+};
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+<script>
+function myFunction() {
+  var x = document.createElement("AUDIO");
+
+  if (x.canPlayType("audio/mpeg")) {
+    x.setAttribute("src","GMPK.mp3");
+  } else {
+    
+  }
+
+  x.setAttribute("controls", "controls");
+  document.body.appendChild(x);
+}
+
+
+function myFunction1() {
+  var x = document.createElement("AUDIO");
+
+  if (x.canPlayType("audio/mpeg")) {
+    x.setAttribute("src","GSN.mp3");
+  } else {
+    
+  }
+
+  x.setAttribute("controls", "controls");
+  document.body.appendChild(x);
+}
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
